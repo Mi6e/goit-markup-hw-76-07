@@ -359,6 +359,7 @@ a {
  .team-list {
   padding-left: 0;
   padding-right: 0;
+  gap: 24px;
  }
 
  .team-item {
