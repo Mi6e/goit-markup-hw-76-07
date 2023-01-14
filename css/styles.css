@@ -62,8 +62,8 @@ a {
 
 .container {
  width: 100%;
- /* padding-left: 15px;
- padding-right: 15px; */
+ padding-left: 15px;
+ padding-right: 15px;
  margin: 0 auto;
  outline: 2px solid red;
 }
@@ -314,6 +314,14 @@ a {
 
 .team-list {
  gap: 24px;
+ margin-bottom: -72px;
+}
+
+.team-item {
+ background: #ffffff;
+ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ border-radius: 0px 0px 4px 4px;
+ margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -349,13 +357,8 @@ a {
 
  .team-item {
   width: calc((100% - 72px) / 4);
+  margin-bottom: 0;
  }
-}
-
-.team-item {
- background: #ffffff;
- box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
- border-radius: 0px 0px 4px 4px;
 }
 
 .team-name-content {
