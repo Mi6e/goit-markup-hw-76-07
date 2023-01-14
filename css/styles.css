@@ -29,6 +29,7 @@ button {
 
 img {
  display: block;
+ max-width: 100%;
  width: 100%;
  height: auto;
 }
@@ -76,6 +77,12 @@ a {
 @media screen and (min-width: 768px) {
  .container {
   width: 768px;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ .container {
+  width: 1128px;
  }
 }
 
@@ -291,8 +298,6 @@ a {
 /* -----------TEAM---------- */
 .team {
  background: #f4f4fd;
- /* padding-top: 120px;
- padding-bottom: 120px; */
  padding-top: 96px;
  padding-bottom: 128px;
 }
@@ -308,11 +313,15 @@ a {
 }
 
 .team-list {
- /* display: flex; */
  gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
+ .team {
+  padding-top: 96px;
+  padding-bottom: 104px;
+ }
+
  .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -321,19 +330,32 @@ a {
   padding-left: 108px;
   padding-right: 108px;
  }
+
+ .team-item {
+  width: calc((100% - 24px) / 2);
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+ }
+
+ .team-list {
+  padding-left: 0;
+  padding-right: 0;
+ }
+
+ .team-item {
+  width: calc((100% - 72px) / 4);
+ }
 }
 
 .team-item {
- /* width: calc((100% - 72px) / 4); */
  background: #ffffff;
  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
  border-radius: 0px 0px 4px 4px;
-}
-
-@media screen and (min-width: 768px) {
- .team-item {
-  width: calc((100% - 72px) / 2);
- }
 }
 
 .team-name-content {
@@ -391,6 +413,7 @@ a {
 }
 
 /* -----------Customers---------- */
+
 .customers-section {
  padding-top: 120px;
  padding-bottom: 120px;
