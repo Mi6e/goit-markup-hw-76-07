@@ -35,7 +35,7 @@
   />
  </head>
  <body>
-  <!-- <header class="header">
+  <header class="header">
    <div class="container header-container">
     <nav class="navigation">
      <a
@@ -83,8 +83,132 @@
       >
      </li>
     </ul>
+    <button
+     type="button"
+     class="menu-open-btn"
+    >
+     <svg
+      class=""
+      width="32"
+      height="22"
+     >
+      <use href="./images/icons.svg#icon-hamburger"></use>
+     </svg>
+    </button>
    </div>
-  </header> -->
+   <div class="mob-menu">
+    <div class="container">
+     <button
+      type="button"
+      class="menu-close-btn"
+     >
+      <svg
+       class="btn-icon"
+       width="8"
+       height="8"
+      >
+       <use href="./images/icons.svg#icon-vector"></use>
+      </svg>
+     </button>
+     <ul class="mob-menu-list list">
+      <li class="mob-menu-item">
+       <a
+        href="./index.html"
+        class="header-link current"
+        >Studio</a
+       >
+      </li>
+      <li class="mob-menu-item">
+       <a
+        href="./portfolio.html"
+        class="header-link"
+        >Portfolio</a
+       >
+      </li>
+      <li class="mob-menu-item">
+       <a
+        href=""
+        class="header-link"
+        >Contacts</a
+       >
+      </li>
+     </ul>
+     <ul class="mob-contact-list list">
+      <li class="mob-contact-item">
+       <a
+        href="mailto:info@devstudio.com"
+        class="header-link-mail"
+        >info@devstudio.com</a
+       >
+      </li>
+      <li class="mob-contact-item">
+       <a
+        href="tel:+110001111111"
+        class="header-link-tel"
+        >+11 (000) 111-11-11</a
+       >
+      </li>
+     </ul>
+     <ul class="mob-soc-list list">
+      <li class="mob-soc-item">
+       <a
+        class="mob-soc-link"
+        href=""
+       >
+        <svg
+         class="mob-soc-icon"
+         width="24"
+         height="24"
+        >
+         <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+       </a>
+      </li>
+      <li class="mob-soc-item">
+       <a
+        class="mob-soc-link"
+        href=""
+       >
+        <svg
+         class="mob-soc-icon"
+         width="24"
+         height="24"
+        >
+         <use href="./images/icons.svg#icon-twitter"></use></svg
+       ></a>
+      </li>
+      <li class="mob-soc-item">
+       <a
+        class="mob-soc-link"
+        href=""
+       >
+        <svg
+         class="mob-soc-icon"
+         width="24"
+         height="24"
+        >
+         <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+       </a>
+      </li>
+      <li class="mob-soc-item">
+       <a
+        class="mob-soc-link"
+        href=""
+       >
+        <svg
+         class="mob-soc-icon"
+         width="24"
+         height="24"
+        >
+         <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </header>
   <main>
    <section class="hero">
     <div class="hero-container container">
@@ -219,6 +343,7 @@
      <ul class="team-list list">
       <li class="team-item">
        <img
+        srcset="./images/mark_guerrero.jpg 1x, ./images/mark_guerrero-2x.jpg 2x"
         src="./images/mark_guerrero.jpg"
         alt="Mark Guerrero"
         width="264"
@@ -288,6 +413,7 @@
       </li>
       <li class="team-item">
        <img
+        srcset="./images/tom_ford.jpg 1x, ./images/tom_ford-2x.jpg 2x"
         src="./images/tom_ford.jpg"
         alt="Tom Ford"
         width="264"
@@ -357,6 +483,7 @@
       </li>
       <li class="team-item">
        <img
+        srcset="./images/camila_garcia.jpg 1x, ./images/camila_garcia-2x.jpg 2x"
         src="./images/camila_garcia.jpg"
         alt="Camila Garcia"
         width="264"
@@ -426,6 +553,7 @@
       </li>
       <li class="team-item">
        <img
+        srcset="./images/daniel_wilson.jpg 1x, ./images/daniel_wilson-2x.jpg 2x"
         src="./images/daniel_wilson.jpg"
         alt="Daniel Wilson"
         width="264"

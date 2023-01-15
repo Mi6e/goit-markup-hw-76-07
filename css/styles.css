@@ -122,12 +122,14 @@ a {
 }
 
 .header-nav-list {
- display: flex;
+ /* display: flex; */
+ display: none;
  gap: 40px;
 }
 
 .header-list {
- display: flex;
+ /* display: flex; */
+ display: none;
 }
 
 .header-link {
@@ -183,6 +185,26 @@ a {
 
 .header-link-mail {
  margin-right: 40px;
+}
+
+.menu-open-btn {
+ background: #ffffff;
+ border: none;
+}
+
+.mob-menu {
+ position: fixed;
+ background: #ffffff;
+ width: 100vw;
+ height: 100vh;
+ top: 0;
+ /* left: 0; */
+ padding-top: 40px;
+ padding-bottom: 40px;
+}
+
+.menu-close-btn {
+ margin-bottom: 16px;
 }
 
 /* --------------HERO------------ */
@@ -840,7 +862,8 @@ a {
  transform: translate(-50%, -50%) scale(2.5);
 }
 
-.modal-close-btn {
+.modal-close-btn,
+.menu-close-btn {
  position: absolute;
  top: 24px;
  right: 24px;
