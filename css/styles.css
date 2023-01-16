@@ -192,6 +192,12 @@ a {
  border: none;
 }
 
+@media (min-width: 768px) {
+ .menu-open-btn {
+  display: none;
+ }
+}
+
 .mob-menu {
  position: fixed;
  background: #ffffff;
@@ -202,6 +208,12 @@ a {
  /* padding-top: 80px;
  padding-bottom: 40px; */
  padding: 80px 40px 40px 40px;
+}
+
+@media (min-width: 768px) {
+ .mob-menu {
+  display: none;
+ }
 }
 
 .mob {
