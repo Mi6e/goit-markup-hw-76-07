@@ -425,6 +425,12 @@ a {
  padding-bottom: 120px;
 }
 
+@media screen and (max-width: 1200px) {
+ .action {
+  display: none;
+ }
+}
+
 .action-title {
  font-weight: 600;
  font-size: 36px;
