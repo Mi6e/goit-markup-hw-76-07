@@ -85,78 +85,85 @@
     </ul>
     <button
      type="button"
-     class="menu-open-btn"
+     class="menu-open-btn js-open-menu"
+     aria-expanded="false"
+     aria-controls="mobile-menu"
     >
      <svg
-      class=""
+      class="hamburger"
       width="32"
-      height="22"
+      height="32"
      >
       <use href="./images/icons.svg#icon-hamburger"></use>
      </svg>
     </button>
    </div>
-   <div class="mob-menu">
-    <div class="container">
-     <button
-      type="button"
-      class="menu-close-btn"
-     >
-      <svg
-       class="btn-icon"
-       width="8"
-       height="8"
+   <div class="mob-menu js-menu-container">
+    <div class="mob container">
+     <div class="mob-menu-top">
+      <button
+       type="button"
+       class="menu-close-btn js-close-menu"
       >
-       <use href="./images/icons.svg#icon-vector"></use>
-      </svg>
-     </button>
-     <ul class="mob-menu-list list">
-      <li class="mob-menu-item">
-       <a
-        href="./index.html"
-        class="header-link current"
-        >Studio</a
+       <svg
+        class="btn-icon"
+        width="8"
+        height="8"
        >
-      </li>
-      <li class="mob-menu-item">
-       <a
-        href="./portfolio.html"
-        class="header-link"
-        >Portfolio</a
-       >
-      </li>
-      <li class="mob-menu-item">
-       <a
-        href=""
-        class="header-link"
-        >Contacts</a
-       >
-      </li>
-     </ul>
-     <ul class="mob-contact-list list">
-      <li class="mob-contact-item">
-       <a
-        href="mailto:info@devstudio.com"
-        class="header-link-mail"
-        >info@devstudio.com</a
-       >
-      </li>
-      <li class="mob-contact-item">
-       <a
-        href="tel:+110001111111"
-        class="header-link-tel"
-        >+11 (000) 111-11-11</a
-       >
-      </li>
-     </ul>
+        <use href="./images/icons.svg#icon-vector"></use>
+       </svg>
+      </button>
+
+      <ul class="mob-menu-list list">
+       <li class="mob-menu-item">
+        <a
+         href="./index.html"
+         class="mob-menu-link"
+         >Studio</a
+        >
+       </li>
+       <li class="mob-menu-item">
+        <a
+         href="./portfolio.html"
+         class="mob-menu-link"
+         >Portfolio</a
+        >
+       </li>
+       <li class="mob-menu-item">
+        <a
+         href=""
+         class="mob-menu-link"
+         >Contacts</a
+        >
+       </li>
+      </ul>
+     </div>
+     <div class="mob-menu-botom">
+      <ul class="mob-contact-list list">
+       <li class="mob-contact-item">
+        <a
+         href="tel:+110001111111"
+         class="mob-contact-link-tel"
+         >+11 (000) 111-11-11</a
+        >
+       </li>
+       <li class="mob-contact-item">
+        <a
+         href="mailto:info@devstudio.com"
+         class="mob-contact-link-mail"
+         >info@devstudio.com</a
+        >
+       </li>
+      </ul>
+     </div>
      <ul class="mob-soc-list list">
       <li class="mob-soc-item">
        <a
-        class="mob-soc-link"
+        class="team-soc-link"
         href=""
        >
         <svg
-         class="mob-soc-icon"
+         class="team-soc-icon"
          width="24"
          height="24"
         >
@@ -166,11 +173,11 @@
       </li>
       <li class="mob-soc-item">
        <a
-        class="mob-soc-link"
+        class="team-soc-link"
         href=""
        >
         <svg
-         class="mob-soc-icon"
+         class="team-soc-icon"
          width="24"
          height="24"
         >
@@ -179,11 +186,11 @@
       </li>
       <li class="mob-soc-item">
        <a
-        class="mob-soc-link"
+        class="team-soc-link"
         href=""
        >
         <svg
-         class="mob-soc-icon"
+         class="team-soc-icon"
          width="24"
          height="24"
         >
@@ -193,11 +200,11 @@
       </li>
       <li class="mob-soc-item">
        <a
-        class="mob-soc-link"
+        class="team-soc-link"
         href=""
        >
         <svg
-         class="mob-soc-icon"
+         class="team-soc-icon"
          width="24"
          height="24"
         >
@@ -967,5 +974,6 @@
    </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
  </body>
 </html>
