@@ -208,6 +208,13 @@ a {
  /* padding-top: 80px;
  padding-bottom: 40px; */
  padding: 80px 40px 40px 40px;
+
+ transform: translateX(100%);
+ transition: transform 250ms easy-in-out;
+}
+
+.mob-menu.is-open {
+ transform: translateX(0);
 }
 
 @media (min-width: 768px) {
