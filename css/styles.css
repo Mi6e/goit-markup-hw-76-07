@@ -122,14 +122,44 @@ a {
 }
 
 .header-nav-list {
- /* display: flex; */
- display: none;
+ display: flex;
  gap: 40px;
 }
 
+@media screen and (max-width: 768px) {
+ .header-nav-list {
+  display: none;
+ }
+}
+
 .header-list {
- /* display: flex; */
- display: none;
+ display: flex;
+ flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+ .header-list {
+  display: none;
+ }
+}
+
+@media screen and (min-width: 768px) {
+ .header-list {
+  display: flex;
+ }
+ .header {
+  padding-bottom: 0;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ .header-list {
+  display: flex;
+  flex-direction: row;
+ }
+ .header {
+  padding-bottom: 24px;
+ }
 }
 
 .header-link {
@@ -381,8 +411,10 @@ a {
 
 /* ---------INFO----------- */
 .info-section {
- padding-top: 120px;
- padding-bottom: 120px;
+ /* padding-top: 120px;
+ padding-bottom: 120px; */
+ padding-top: 96px;
+ padding-bottom: 96px;
 }
 
 .info-list {
@@ -417,6 +449,81 @@ a {
  line-height: calc(24 / 16);
  letter-spacing: 0.02em;
  color: var(--body-text-color);
+}
+
+@media screen and (max-width: 768px) {
+ .info-icon-content {
+  display: none;
+ }
+
+ .info-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+ }
+ .info-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
+  letter-spacing: 0.02em;
+ }
+ .info-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: #434455;
+  width: 100%;
+  height: 100%;
+ }
+ .info-item {
+ }
+}
+
+@media screen and (min-width: 768px) {
+ .info-icon-content {
+  display: none;
+ }
+ .info-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
+ }
+
+ .info-item {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* column-gap: 24px;
+  row-gap: 72px; */
+  width: calc((100% - 24px) / 2);
+  margin-bottom: 0;
+ }
+ .info-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
+  letter-spacing: 0.02em;
+ }
+ .info-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: #434455;
+  /* width: 100%;
+  height: 100%; */
+ }
 }
 
 /* ----------action----------- */
