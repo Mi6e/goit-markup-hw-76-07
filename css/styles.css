@@ -141,6 +141,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+ .header-nav-list {
+  display: flex;
+ }
  .header-list {
   display: flex;
  }
